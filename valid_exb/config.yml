@@ -3,7 +3,6 @@ validity-check:
   tags:
     - test
   script:
-    - bash submodule_init.sh
     - echo "Checking updated exmaralda files (if any) for validity"
     - bash tests/valid_exb/test.sh
   only:
