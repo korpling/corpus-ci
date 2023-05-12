@@ -1,0 +1,5 @@
+stages:
+  - test
+include:
+  - 'tests/*/config.yml'
+

@@ -1,0 +1,10 @@
+aql-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - echo "Running check on latest changes ..."
+    - bash tests/aql/check_changes.sh
+  only:
+    changes:
+      - "{exb,ptb,conll}/RUEG/P*/*/*.{exb,ptb,conll,conllu,txt}"

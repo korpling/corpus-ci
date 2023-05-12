@@ -1,0 +1,18 @@
+manual-exmaralda-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - tests/aql/annatto-cli tests/manual-checks/all-exb/import_exb.xml
+  rules:
+    - when: manual
+      allow_failure: true
+manual-conll-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - tests/aql/annatto-cli tests/manual-checks/all-conll/import_conll.xml
+  rules:
+    - when: manual
+      allow_failure: true

@@ -1,0 +1,10 @@
+plausibility-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - echo "Checking number of changed files for plausibility"
+    - bash tests/plausibility/test.sh
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /#plausible/

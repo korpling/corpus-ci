@@ -1,0 +1,10 @@
+validity-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - echo "Checking updated exmaralda files (if any) for validity"
+    - bash tests/valid_exb/test.sh
+  only:
+    changes:
+      - "exb/RUEG/P*/*/*.exb"

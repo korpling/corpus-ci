@@ -1,0 +1,10 @@
+hidden-tier-check:
+  stage: test
+  tags:
+    - test
+  script:
+    - echo "Checking for hidden tiers"
+    - bash tests/hidden-tiers/test.sh
+  only:
+    changes:
+      - "exb/RUEG/P*/*/*.exb"

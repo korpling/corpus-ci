@@ -1,0 +1,9 @@
+<pepper-job>
+  <importer name="import_conllu" path="../../../conll/RUEG/P5/" />
+  <importer name="import_conllu" path="../../../conll/RUEG/P6/" />  
+  <manipulator name="check">
+    <customization>
+      <property key="config.path">./check_conll_test_queries.csv</property>
+    </customization>
+  </manipulator>
+</pepper-job>
