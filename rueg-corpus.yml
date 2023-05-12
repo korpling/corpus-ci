@@ -2,5 +2,5 @@ stages:
   - test
 include:
   project: 'ueg-pd/rueg-ci/rueg-runner'
-  file: 'tests/{aql,hidden-tiers,manual-checks,plausibility,valid_exb}/config.yml'
+  file: '{aql,hidden-tiers,manual-checks,plausibility,valid_exb}/config.yml'
 
