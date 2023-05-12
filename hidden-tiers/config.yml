@@ -3,7 +3,7 @@ hidden-tier-check:
   tags:
     - test
   script:
-    - git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests --force
+    - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
     - echo "Checking for hidden tiers"
     - bash tests/hidden-tiers/test.sh
   only:

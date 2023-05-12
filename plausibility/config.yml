@@ -3,7 +3,7 @@ plausibility-check:
   tags:
     - test
   script:
-    - git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests --force
+    - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
     - echo "Checking number of changed files for plausibility"
     - bash tests/plausibility/test.sh
   except:
