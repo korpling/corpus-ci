@@ -4,6 +4,8 @@ plausibility-check:
     - test
   script:
     - echo "Checking number of changed files for plausibility"
+    - echo $(pwd)
+    - echo $CI_COMMIT_MESSAGE
     - bash tests/plausibility/test.sh
   except:
     variables:
