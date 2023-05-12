@@ -3,6 +3,7 @@ manual-exmaralda-check:
   tags:
     - test
   script:
+    - [ ! -d tests ] && git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
     - tests/aql/annatto-cli tests/manual-checks/all-exb/import_exb.xml
   rules:
     - when: manual
@@ -12,6 +13,7 @@ manual-conll-check:
   tags:
     - test
   script:
+    - [ ! -d tests ] && git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
     - tests/aql/annatto-cli tests/manual-checks/all-conll/import_conll.xml
   rules:
     - when: manual
