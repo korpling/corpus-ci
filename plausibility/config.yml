@@ -3,7 +3,6 @@ plausibility-check:
   tags:
     - test
   script:
-    - bash submodule_init.sh
     - echo "Checking number of changed files for plausibility"
     - bash tests/plausibility/test.sh
   except:
