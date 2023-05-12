@@ -4,6 +4,7 @@ hidden-tier-check:
     - test
   script:
     - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - git submodule update --remote
     - echo "Checking for hidden tiers"
     - bash tests/hidden-tiers/test.sh
   only:

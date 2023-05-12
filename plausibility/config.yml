@@ -4,6 +4,7 @@ plausibility-check:
     - test
   script:
     - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - git submodule update --remote
     - echo "Checking number of changed files for plausibility"
     - bash tests/plausibility/test.sh
   except:

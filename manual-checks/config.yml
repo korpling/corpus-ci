@@ -4,6 +4,7 @@ manual-exmaralda-check:
     - test
   script:
     - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - git submodule update --remote
     - tests/aql/annatto-cli tests/manual-checks/all-exb/import_exb.xml
   rules:
     - when: manual
@@ -14,6 +15,7 @@ manual-conll-check:
     - test
   script:
     - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - git submodule update --remote
     - tests/aql/annatto-cli tests/manual-checks/all-conll/import_conll.xml
   rules:
     - when: manual

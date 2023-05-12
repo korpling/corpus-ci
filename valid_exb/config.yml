@@ -4,6 +4,7 @@ validity-check:
     - test
   script:
     - git submodule add --force git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - git submodule update --remote
     - echo "Checking updated exmaralda files (if any) for validity"
     - bash tests/valid_exb/test.sh
   only:
