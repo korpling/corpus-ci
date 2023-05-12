@@ -3,7 +3,7 @@ validity-check:
   tags:
     - test
   script:
-    - git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
+    - bash submodule_init.sh
     - echo "Checking updated exmaralda files (if any) for validity"
     - bash tests/valid_exb/test.sh
   only:
