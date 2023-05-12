@@ -3,6 +3,8 @@ aql-check:
   tags:
     - test
   script:
+    - [ -d .git/modules/tests ] && rm -fr .git/modules/tests
+    - git submodule add git@scm.cms.hu-berlin.de:rueg-pd/rueg-ci/rueg-runner.git tests
     - echo "Running check on latest changes ..."
     - bash tests/aql/check_changes.sh
   only:
