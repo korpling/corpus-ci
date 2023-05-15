@@ -5,13 +5,8 @@ variables:
 stages:
   - test
 include:
-  - project: 'rueg-pd/rueg-ci/rueg-runner'
-    file: 'aql/config.yml'
-  - project: 'rueg-pd/rueg-ci/rueg-runner'
-    file: 'hidden-tiers/config.yml'
-  - project: 'rueg-pd/rueg-ci/rueg-runner'
-    file: 'manual-checks/config.yml'
-  - project: 'rueg-pd/rueg-ci/rueg-runner'
-    file: 'plausibility/config.yml'
-  - project: 'rueg-pd/rueg-ci/rueg-runner'
-    file: 'valid_exb/config.yml'
+  - 'aql/config.yml'
+  - 'hidden-tiers/config.yml'
+  - 'manual-checks/config.yml'
+  - 'plausibility/config.yml'
+  - 'valid_exb/config.yml'
