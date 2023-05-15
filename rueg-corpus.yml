@@ -2,7 +2,6 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
   GIT_SUBMODULE_UPDATE_FLAGS: --remote
   GIT_SUBMODULE_DEPTH: 1
-  GITLAB_USER_ID: 2211
 stages:
   - test
 include:
